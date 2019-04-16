@@ -1,13 +1,20 @@
 header {
-    .flex(flex-end, 100%);
-    background: rgb(247, 248, 247);
-    margin-top: 20px;
-    margin-bottom: 30px;
+    .flex(flex-start, 100%);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    @media @desktop {
+        margin-left: 0;
+    }
+    
 }
 
 header>.logo {
     width: 50px;
     height: 40px;
+    background: white;
     border: 1px solid blue;
+
+    
 
 }
