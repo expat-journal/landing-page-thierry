@@ -75,9 +75,17 @@
     .bottom-content {
         margin-top: 40px;
         .flex(space-between, 100%);
+
+        @media @mobile {
+            flex-direction: column;
+        }
     
         .image {
             width: 25%;
+
+            @media @mobile {
+                width: 100%;
+            }
     
             img{
                 width: 100%;
