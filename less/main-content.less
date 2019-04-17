@@ -6,14 +6,15 @@
 
     .top-content {
         background-image: url("../img/airport-passengers.jpg");
-        font-family: 'Abril Fatface', Helvetica, Arial;
+        font-family: 'Merienda', cursive;
         .flex(center, 100%);
         flex-wrap: wrap;
+        color: white;
 
         .title {
             margin-top: 50px;
             font-size: 7rem;
-            color: red;
+            background-color: rgba(0,0,0,.7);
 
             @media @tablet {
                 font-size: 6rem;
@@ -30,7 +31,8 @@
             margin-top: 85px;
             padding: 0 20%;
             font-size:  4rem;
-            color: red;
+            background-color: rgba(0,0,0,.7);
+            
 
             @media @tablet {
                 font-size: 3rem;
@@ -43,22 +45,25 @@
            }
         }
 
-        button {
-            width: 200px;
-            height: 40px;
-            background: #6b9819;
+        .btn {
+
+            .custom-btn(275px, 40px, #6b9819);
             margin: 125px 20px 100px;
-            border-radius: 5px;
             font-size: 2.5rem;
+            border: 1px solid white;
+            border-radius: 6px;
+
+
+            a {
+                display: block;
+                text-decoration: none;
+                color:white;
+            }
 
             @media @mobile {
                 width: 150px;
             }
 
-            a {
-                text-decoration: none;
-                color: black;
-            }
         }
     }
 
@@ -66,9 +71,17 @@
     .bottom-content {
         margin-top: 40px;
         .flex(space-between, 100%);
+
+        @media @mobile {
+            flex-direction: column;
+        }
     
         .image {
             width: 25%;
+
+            @media @mobile {
+                width: 100%;
+            }
     
             img{
                 width: 100%;

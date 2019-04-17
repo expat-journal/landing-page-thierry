@@ -147,11 +147,28 @@ header {
     margin-left: 0;
   }
 }
-header > .logo {
+header .logo {
   width: 50px;
   height: 40px;
   background: white;
   border: 1px solid blue;
+}
+header .btn {
+  width: 75px;
+  height: 40px;
+  background: grey;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding-top: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+header .btn a {
+  text-decoration: none;
+  color: black;
 }
 .main-content {
   max-width: 1200px;
@@ -160,16 +177,17 @@ header > .logo {
 }
 .main-content .top-content {
   background-image: url("../img/airport-passengers.jpg");
-  font-family: 'Abril Fatface', Helvetica, Arial;
+  font-family: 'Merienda', cursive;
   display: flex;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  color: white;
 }
 .main-content .top-content .title {
   margin-top: 50px;
   font-size: 7rem;
-  color: red;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 800px) {
   .main-content .top-content .title {
@@ -186,7 +204,7 @@ header > .logo {
   margin-top: 85px;
   padding: 0 20%;
   font-size: 4rem;
-  color: red;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 800px) {
   .main-content .top-content p {
@@ -200,22 +218,28 @@ header > .logo {
     margin-top: 60px;
   }
 }
-.main-content .top-content button {
-  width: 200px;
+.main-content .top-content .btn {
+  width: 275px;
   height: 40px;
   background: #6b9819;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
   margin: 125px 20px 100px;
-  border-radius: 5px;
   font-size: 2.5rem;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+.main-content .top-content .btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
 }
 @media (max-width: 500px) {
-  .main-content .top-content button {
+  .main-content .top-content .btn {
     width: 150px;
   }
-}
-.main-content .top-content button a {
-  text-decoration: none;
-  color: black;
 }
 .main-content .bottom-content {
   margin-top: 40px;
@@ -223,8 +247,18 @@ header > .logo {
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
 .main-content .bottom-content .image {
   width: 25%;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content .image {
+    width: 100%;
+  }
 }
 .main-content .bottom-content .image img {
   width: 100%;
