@@ -41,7 +41,7 @@ function cycleImages(imageArray) {
     setInterval(function() {
         removeFourImages(imageArray);
         showFourImages(imageArray);
-    }, 9000);
+    }, 4000);
 }
 
 

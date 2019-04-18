@@ -139,13 +139,7 @@ header {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 10px;
-  margin-left: 30px;
-}
-@media (max-width: 1215px) {
-  header {
-    margin-left: 0;
-  }
+  margin: 10px 0;
 }
 header .logo {
   width: 50px;
@@ -186,7 +180,7 @@ header .btn a {
 }
 .main-content .top-content .title {
   margin-top: 50px;
-  padding: 15px 0;
+  padding: 20px 7px;
   font-size: 7rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -203,7 +197,7 @@ header .btn a {
 }
 .main-content .top-content p {
   margin-top: 85px;
-  padding: 7px 20%;
+  padding: 9px 17%;
   font-size: 4rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -254,7 +248,7 @@ header .btn a {
   }
 }
 .main-content .bottom-content .image {
-  width: 33%;
+  width: 25%;
 }
 @media (max-width: 500px) {
   .main-content .bottom-content .image {
@@ -263,4 +257,6 @@ header .btn a {
 }
 .main-content .bottom-content .image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
