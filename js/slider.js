@@ -41,7 +41,7 @@ function cycleImages(imageArray) {
     setInterval(function() {
         removeFourImages(imageArray);
         showFourImages(imageArray);
-    }, 7000);
+    }, 9000);
 }
 
 
@@ -54,10 +54,19 @@ let imageIndex = 0
 imageArray = []
 
 imageArray.push(new ImageItem("deanna-ritchie-227649-unsplash.jpg"));
+imageArray.push(new ImageItem("clem-onojeghuo-110452-unsplash.jpg"));
 imageArray.push(new ImageItem("anders-jilden-307322-unsplash.jpg"));
+imageArray.push(new ImageItem("jacek-dylag-579738-unsplash.jpg"));
 imageArray.push(new ImageItem("juan-rojas-349568-unsplash.jpg"));
-imageArray.push(new ImageItem("vaida-tamosauskaite-85608-unsplash.jpg"));
+imageArray.push(new ImageItem("jovi-waqa-186174-unsplash.jpg"));
+imageArray.push(new ImageItem("kazuend-32605-unsplash.jpg"));
 imageArray.push(new ImageItem("mantas-hesthaven-135478-unsplash.jpg"));
+imageArray.push(new ImageItem("satyam-bhuyan-1456723-unsplash.jpg"));
+imageArray.push(new ImageItem("vaida-tamosauskaite-85608-unsplash.jpg"));
+
+
+
+
 
 //setInterval( cycleImages(imageArray), 3000 );
 cycleImages(imageArray);

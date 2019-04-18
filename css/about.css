@@ -163,3 +163,23 @@ p {
 span {
   font-weight: bold;
 }
+.btn {
+  width: 150px;
+  height: 30px;
+  background: grey;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  margin: 70px auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn a {
+  display: block;
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+  text-shadow: 2px 2px 4px white;
+  font-weight: 600;
+}
