@@ -18,7 +18,14 @@ class ImageItem {
     }
 }
 
- //display next 4 images
+//event listener to scroll down page when clickin on down arrow
+let arrow = document.querySelector(".arrow > img");
+arrow.addEventListener('click', function() {
+    window.scrollBy(0, 500);
+})
+
+
+ //functio to display next 4 images
 function showFourImages(imageArray) {
 
     for(let i=imageIndex; i < imageIndex+4; i++) {
@@ -26,15 +33,15 @@ function showFourImages(imageArray) {
     }
 }
 
-//remove current 4 images
+//function to remove current 4 images
 function removeFourImages(imageArray) {
     for (let i=imageIndex; i < imageIndex+4; i++) {
         imageArray[i % imageArray.length].removeImage();
     }
-    //update starting index of 4 new images to display
-    imageIndex = (imageIndex + 4) % imageArray.length;
+    imageIndex = (imageIndex + 4) % imageArray.length; //update starting index of 4 new images to display
 }
 
+//function to do a permanent image sliding 4 at a time
 function cycleImages(imageArray) {
 
     showFourImages(imageArray);
@@ -50,7 +57,6 @@ const imageDirectory = "./img/carousel/";
 const altText = "Images of people or places abroad"
 
 let imageIndex = 0
-
 imageArray = []
 
 imageArray.push(new ImageItem("deanna-ritchie-227649-unsplash.jpg"));
@@ -65,8 +71,4 @@ imageArray.push(new ImageItem("satyam-bhuyan-1456723-unsplash.jpg"));
 imageArray.push(new ImageItem("vaida-tamosauskaite-85608-unsplash.jpg"));
 
 
-
-
-
-//setInterval( cycleImages(imageArray), 3000 );
 cycleImages(imageArray);
