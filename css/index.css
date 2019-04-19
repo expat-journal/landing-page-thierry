@@ -133,19 +133,19 @@ html {
 }
 body {
   width: 100%;
-  background: #091A3E;
+  background: #001f4d;
 }
 header {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 10px 0;
 }
 header .logo {
   width: 50px;
   height: 40px;
   background: white;
   border: 1px solid blue;
+  margin: 10px 0;
 }
 header .btn {
   width: 75px;
@@ -159,12 +159,14 @@ header .btn {
   padding-top: 10px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin: 10px 0;
 }
 header .btn a {
   text-decoration: none;
   color: black;
 }
 .main-content {
+  background: #091A3E;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -258,10 +260,12 @@ header .btn a {
 }
 .main-content .bottom-content .image {
   width: 25%;
+  max-height: 200px;
 }
 @media (max-width: 500px) {
   .main-content .bottom-content .image {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .main-content .bottom-content .image img {
@@ -282,6 +286,7 @@ header .btn a {
   width: 100%;
   font-size: 3rem;
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 40px;
   font-weight: 800;
 }

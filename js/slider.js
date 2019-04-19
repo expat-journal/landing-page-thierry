@@ -1,3 +1,4 @@
+//Div containing sliding images are stored as objects fron the ImageItem class
 class ImageItem {
     constructor(imageName) {
         this.imageDiv = document.createElement('div')
@@ -19,14 +20,14 @@ class ImageItem {
 }
 
 //event listener to scroll down page when clickin on down arrow
-let arrow = document.querySelector(".arrow > img");
+const arrow = document.querySelector(".arrow > img");
 arrow.addEventListener('click', function() {
     window.scrollBy(0, 500);
 })
 
-
  //functio to display next 4 images
 function showFourImages(imageArray) {
+    const watchMedia = window.matchMedia("(max-width: 500px)");
 
     for(let i=imageIndex; i < imageIndex+4; i++) {
         imageArray[i % imageArray.length].showImage();

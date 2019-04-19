@@ -1,5 +1,5 @@
 .main-content {
-
+    background: #091A3E;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -93,15 +93,23 @@
     
         .image {
             width: 25%;
+            max-height: 200px;
+
 
             @media @mobile {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
+                
             }
     
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+
+                @media @mobile {
+                    
+                }
 
             }
         }
@@ -119,6 +127,7 @@
             width: 100%;
             font-size: 3rem;
             text-align: center;
+            margin-top: 40px;
             margin-bottom: 40px;
             font-weight: 800;
         }
@@ -128,8 +137,6 @@
             margin-left: 5px;
 
         }
-
-
 
         div {
             width: 30%;
